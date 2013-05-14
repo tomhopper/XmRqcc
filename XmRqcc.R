@@ -20,6 +20,9 @@
 #' @param ... Other qcc parameters will be passed through directly to both  qcc 
 #' @return \item{XmRqcc()[[1]]}{contains the individuals (type = xbar.one) qcc object}
 #' @return \item{XmRqcc()[[2]]}{contains the moving range (type = R) qcc object}
+#' @references http://cran.r-project.org/web/packages/qcc/qcc.pdf
+#' @references http://www.r-project.org/doc/Rnews/Rnews_2004-1.pdf
+#' @references http://www.qualitydigest.com/inside/twitter-ed/individual-charts-done-right-and-wrong.html
 libresult <- require(qcc)
 if(libresult == FALSE)
   stop("Could not load library qcc. XmRqcc relies on qcc.")
